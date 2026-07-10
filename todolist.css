@@ -63,6 +63,7 @@ h3 i {
 
 #addtask:hover {
     background-color: rgb(214, 132, 146);
+    cursor: pointer;
 }
 
 .task{
@@ -80,12 +81,13 @@ h3 i {
     margin-right: auto;
 }
 
-.delete-btn{
+.deletebtn{
     border: none;
     background-color: #ffb4b4;
     height: 40px;
     width: 40px;
     border-radius: 5px;
+     color: rgb(213, 37, 37);
 }
 
 .task input:checked + p{ 
@@ -105,7 +107,9 @@ h3 i {
 footer p{
     color: rgb(56, 56, 56);
 }
-.delete-btn{
-    color: rgb(213, 37, 37);
+
+.deletebtn:hover{
+     background-color:  rgb(214, 151, 151);
+     cursor: pointer;
 }
 
