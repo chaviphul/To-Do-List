@@ -13,9 +13,9 @@ function updateCompletedandPending() {
     pending.innerHTML = task.length - count;
 }
 
-function renderTasks(){
-    main.innerHTML="";
-    for(let i=0; i<tasks.length; i++){
+function renderTasks() {
+    main.innerHTML = "";
+    for (let i = 0; i < tasks.length; i++) {
         main.innerHTML = main.innerHTML + `<div class="task">
                 <input type="checkbox" class="checkbox">
                 <p>${tasks[i]}</p>
@@ -26,10 +26,10 @@ function renderTasks(){
     updateCompletedandPending();
 }
 
-function updateTasks(text){
-    for(let i=0; i<tasks.length; i++){
-        if(text == tasks[i]){
-            tasks.splice(i,1);
+function updateTasks(text) {
+    for (let i = 0; i < tasks.length; i++) {
+        if (text == tasks[i]) {
+            tasks.splice(i, 1);
         }
     }
 }
@@ -47,10 +47,10 @@ let pending = document.getElementById("pending");
 let checkbox = document.getElementsByClassName("checkbox");
 
 
-let tasks=[];
-tasks=JSON.parse(localStorage.getItem("tasks"));
-if(tasks==null){
-    tasks=[];
+let tasks = [];
+tasks = JSON.parse(localStorage.getItem("tasks"));
+if (tasks == null) {
+    tasks = [];
 }
 
 renderTasks();
@@ -77,7 +77,7 @@ main.onclick = function (event) {
         let paragraph = this_task.querySelector("p");
         let text = paragraph.textContent;
         updateTasks(text);
-        localStorage.setItem("tasks",JSON.stringify(tasks));
+        localStorage.setItem("tasks", JSON.stringify(tasks));
         renderTasks();
     }
 

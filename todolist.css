@@ -66,36 +66,36 @@ h3 i {
     cursor: pointer;
 }
 
-.task{
+.task {
     display: flex;
     align-items: center;
     gap: 15px;
     width: 90%;
     margin: 10px auto;
     padding: 15px;
-    border: 1px solid rgb(202,202,202);
+    border: 1px solid rgb(202, 202, 202);
     border-radius: 4px;
 }
 
-.task p{
+.task p {
     margin-right: auto;
 }
 
-.deletebtn{
+.deletebtn {
     border: none;
     background-color: #ffb4b4;
     height: 40px;
     width: 40px;
     border-radius: 5px;
-     color: rgb(213, 37, 37);
+    color: rgb(213, 37, 37);
 }
 
-.task input:checked + p{ 
+.task input:checked+p {
     color: gray;
     text-decoration: line-through;
 }
 
-.mainbox footer{
+.mainbox footer {
     width: 100%;
     background-color: rgb(247, 184, 243);
     height: 50px;
@@ -104,12 +104,11 @@ h3 i {
     border-radius: 8px;
 }
 
-footer p{
+footer p {
     color: rgb(56, 56, 56);
 }
 
-.deletebtn:hover{
-     background-color:  rgb(214, 151, 151);
-     cursor: pointer;
+.deletebtn:hover {
+    background-color: rgb(214, 151, 151);
+    cursor: pointer;
 }
-
